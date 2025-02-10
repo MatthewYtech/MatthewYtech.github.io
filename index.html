@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first weebsite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my first weebsite</title>
+  <style>
+    #selectID {
+      color: red
+    }
+
+    .paraclass {
+      font-weight: bold;
+    }
+  </style>
+  <style>
+    
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted rgb(255, 255, 255);
+      
+    }
+
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: rgb(0, 0, 0);
+      color: #ff0000;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+
+      
+      position: absolute;
+      z-index: 1;
+    }
+
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  </style>
+<style>
+  .testbox {background-color: #ff0000;
+  margin: 50px;
+  margin: 2opx 50px 20px 50px;
+  border-style: solid;
+  border-width: 2px 4px 4px 2px;
+  border-color: #000000;
+  padding: 10px;
+  }
+</style>
+  <div class="tooltip">do not hover over me
+    <span class="tooltiptext">I told you</span>
+  </div>
 </head>
+
 <body>
-    <h1>this is a header</h1>
-    <h2>this is a smaller header</header></h2>
-    <h3>this is an even smaller header</h3>
-    <h4>this is a really small header</h4>
-    <h5>this is a super small header</h5>
-    <h6>this is the smallest header</h6>
-    <p><b>this is bold text</b></p>
-    <p><i>this is italicized text</i></p>
-    <p><u>this is underlined text</u></p>
-    <p><small>this is small text</small></p>
-    <p><del>this is deleted text</del></p>
-    <p>this is<sub> sub text</sub></p>
-    <p>this is<sup>sup text</sup></p>
-    <p><marquee>this is scrolling text</marquee></p>
-    <p>This is a change to the weebsite</p>
-        
+  <p class="paraclass" style="color:blue;">first Paragraph</p>
+  <p id="selectID">second paragraph</p>
+  <p class="paraclass">not second paragraph</p>
+  <div class="testbox">hello!</div>
+  <div class="testbox">hello!</div>
 </body>
+
 </html>
