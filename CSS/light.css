@@ -1,0 +1,15 @@
+a, a:visited {
+    border: 1px solid black;
+    color: black;
+    padding: 4px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #ff00ff;
+}
+
+#buttons {
+    display: none;
+}
+#toolbar {display: flex;}
