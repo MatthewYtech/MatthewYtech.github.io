@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript test</title>
+    <link id="style" rel="stylesheet" href="css/light.css">
+<script src="js/scripts.js"></script>
+</head>
+<body>
+    <div id="toolbar">
+        <div id="buttons">
+            <a href="index.html">home</a>
+            <a href="about.html">About</a>
+            <a href="color.html">color</a>
+            <a href="#" onclick="switchmode()">Mode</a>
+        </div>
+        <a href="#" onclick="showhide()">☰</a>
+        <a href="game/index.html">get to school 6</a>
+    </div>
+  
+    <p id="textBox">This is a test to edit color for the theme of a websight.</p>
+    <button onclick="color()">save "under development"</button>
+    <label>red: <input onchange="changeBG()" type="range" id="red" min="0" max="255"></label>
+    <label>green: <input onchange="changeBG()" type="range" id="green" min="0" max="255"></label>
+    <label>blue: <input onchange="changeBG()" type="range" id="blue" min="0" max="255"></label>
+
+
+</body>
+<script>
+    let textBox = document.getElementById("textBox");
+    let red = document.getElementById("red");
+    let green = document.getElementById("green");
+    let blue = document.getElementById("blue");
+
+    
+    function writeText() {
+        textBox.innerHTML = "This is some <i>OTHER<\i> text."
+    }
+
+    function changeBG() {
+        const rgbColor ="rgb(" + red.value + "," +green.value + "," + blue.value + ")";
+        document.body.style.backgroundColor = rgbColor
+    }
+
+</script>
+</html>

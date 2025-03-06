@@ -8,7 +8,7 @@ let stylelink = document.getElementById('style');
 
 // Conditional Branch with Else Branch
 if (stylemode == 'dark') {
-    // Change the href property of the 'link' cool
+    // Change the href property of the 'link'
     stylelink.href = 'css/dark.css';
 } else {
     stylelink.href = 'css/light.css';
@@ -40,3 +40,4 @@ function showhide() {
 
     }
 }
+
